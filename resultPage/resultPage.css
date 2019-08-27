@@ -1,0 +1,8 @@
+.answers > span{
+    margin: 10px;
+}
+
+.answerContainer{
+    display: flex;
+    flex-direction: column;
+}

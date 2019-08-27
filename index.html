@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="quizContainer">
+            <form name="quiz" action="./resultPage/resultPage.html" method="get">
+                <div id="questionsContainer">
+                    <div class="question">
+                        <div>
+                            How do you describe yourself as a developer?
+                        </div>
+                        <div class="answers">
+                            <input type="radio" name="q1" value="Hermit"> Hermit<br>
+                            <input type="radio" name="q1" value="Sociable"> Sociable<br>
+                            <input type="radio" name="q1" value="Serious"> Serious<br>
+                            <input type="radio" name="q1" value="Grumpy"> Grumpy<br>
+                            <input type="radio" name="q1" value="do not know yet"> do not know yet<br>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div>
+                            Select the JavaScript based technologies:
+                        </div>
+                        <div class="answers">
+                            <input type="checkbox" name="q2" value="AngularJS">AngularJS<br>
+                            <input type="checkbox" name="q2" value="Ember">Ember<br>
+                            <input type="checkbox" name="q2" value="VueJS">VueJS<br>
+                            <input type="checkbox" name="q2" value="Java">Java<br>
+                            <input type="checkbox" name="q2" value="C#">C#<br>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div>
+                            Please introduce a polindrome
+                        </div>
+                        <div class="answers">
+                            <input id="answer3" name="q3" type="text">
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div>
+                            Introduce text
+                        </div>
+                        <div class="answers">
+                            <input id="answer4_1" name="q4" type="text">
+                        </div>
+
+                        <div>
+                            Introduce same text as before but in reverse
+                        </div>
+                        <div class="answers">
+                            <input id="answer4_1" name="q4" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                    <button id="next" type="button">Next</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

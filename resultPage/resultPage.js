@@ -54,8 +54,20 @@ function init() {
         newElement.innerText = `${txt1} reverse ${txt2} is: ${resultText}`;
         answerOneElement.appendChild(newElement);
     }
+    fetch(
+        'https://developers.zomato.com/api/v2.1/collections?city_id=302',{
+            header: {
+                'user-key':'27241e7570b2eaef860ca0e7c31d59b8',
+                'Access-Control-Allow-Origin': '*'
+            },
+            method: 'GET'
+        }
 
+    ).then( result=>{
+        console.log(result);
+    });
 }
+
 
 
 function compareTwoStrings(str1, str2) {
